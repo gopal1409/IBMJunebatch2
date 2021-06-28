@@ -13,3 +13,11 @@ Deploy Multiple Container
 How to check the log of a ontiaant
    17  docker ps
    18  docker logs 142e5
+   
+   container isolation happen throuhg process id
+    27  docker ps
+   28  docker container run --publish 83:80 --detach --name webhost nginx
+   29  docker ps
+   30  docker container top webhost
+   31  ps aux
+
