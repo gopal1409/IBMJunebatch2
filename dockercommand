@@ -4,3 +4,9 @@ root@ip-172-31-17-174:~# history
     3  docker ps
     4  docker images
     5  history
+Deploy Multiple Container
+ 6  docker container run --publish 81:80 --detach nginx
+    7  docker ps
+    8  docker images
+    9  docker container run --publish 82:80 --detach httpd
+   10  docker ps
