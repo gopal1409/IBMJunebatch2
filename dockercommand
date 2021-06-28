@@ -20,4 +20,19 @@ How to check the log of a ontiaant
    29  docker ps
    30  docker container top webhost
    31  ps aux
+   
+   how to start and stop container
+   35  docker run --name mongo -d mongo
+   36  docker ps
+   37  docker stop 7557
+   38  docker ps
+   39  docker ps -a
+   40  docker start 755
+   41  docker ps
+   42  docker rm 755
+   43  docker rm 755 --force
+   44  docker ps
+   45  docker container stop 8de3
+   46  docker container start
+
 
