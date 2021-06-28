@@ -10,3 +10,6 @@ Deploy Multiple Container
     8  docker images
     9  docker container run --publish 82:80 --detach httpd
    10  docker ps
+How to check the log of a ontiaant
+   17  docker ps
+   18  docker logs 142e5
