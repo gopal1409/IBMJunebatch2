@@ -41,3 +41,14 @@ How to login inside a docker container
    71  docker ps
    72  docker exec -it ab12 bash
    73  docker logs mysql
+   
+   Docker networking
+   103  docker network create my_app_net
+  104  docker network ls
+  105  docker network inspect my_app_net
+110  docker run -d --name proxy --network my_app_net nginx:alpine
+  111  docker run -d --name nginx --network my_app_net nginx:alpine
+  112  docker ps
+  113  docker exec -it nginx ping proxy
+  114  docker exec -it proxy ping nginx
+
