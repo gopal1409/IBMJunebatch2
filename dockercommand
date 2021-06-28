@@ -36,3 +36,8 @@ How to check the log of a ontiaant
    46  docker container start
 
 
+How to login inside a docker container
+70  docker run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=true mysql
+   71  docker ps
+   72  docker exec -it ab12 bash
+   73  docker logs mysql
