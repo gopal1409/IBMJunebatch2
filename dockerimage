@@ -57,3 +57,97 @@ How to update the docker image
   249  docker rm ff62 --force
   250  docker run -p 8080:8080 -d springapp
   251  history
+  
+  docker image creating
+   220  java -jar target/spring-boot-web.jar
+  221  cat Dockerfile
+  222  clear
+  223  cat Dockerfile
+  224  docker image
+  225  docker images
+  226  clear
+  227  cat Dockerfile
+  228  clear
+  229  docker build -t springapp .
+  230  docker images
+  231  docker run -p 8080:8080 -d springapp
+  232  docker ps
+  233  history
+  234  docker images
+  235  docker image history springapp
+  236  history
+  237  ls
+  238  vi /src/main/resources/templates/index.html
+  239  vi src/main/resources/templates/index.html
+  240  ls
+  241  vi src/main/resources/templates/index.html
+  242  cat Dockerfile
+  243  clear
+  244  vi src/main/resources/templates/index.html
+  245  mvn clean package
+  246  docker build -t springapp .
+  247  docker images
+  248  docker ps
+  249  docker rm ff62 --force
+  250  docker run -p 8080:8080 -d springapp
+  251  history
+  252  docker images
+  253*
+  254  docker ps
+  255  docker image
+  256  docker images
+  257  jar
+  258  apt install default-jdk
+  259  docker images
+  260  docker build -t springapp:v1 .
+  261  docker run -p 81:8080 -d springapp:v1
+  262  docker ps
+  263  docker login
+  264  docker images
+  265  docker tag 36865fe01591 gopal1409/springapp:v1
+  266  docker images
+  267  docker push gopal1409/springapp:v1
+  268  history
+  269  docker images
+  270  rm -rf .git
+  271  git config --global user.name "gopal"
+  272  git config --global user.email "gopal1409@gmail.com"
+  273  git init
+  274  git add .
+  275  git commit -m "spring boot app"
+  276  git status
+  277  git log
+  278  history
+  279  git remote add origin https://github.com/gopal1409/springappr.git
+  280  git push -u origin master
+  281  git branch
+  282  git remote add origin https://github.com/gopal1409/springappr.git
+  283  git push -u origin master
+  284  ls
+  285  vi src/main/resources/templates/index.html
+  286  git add .
+  287  git commit -m "second commit"
+  288  git push -u origin master
+  289  history
+  290  vi Dockerfile
+  291  git add .
+  292  git commit -m "second commit"
+  293  git push -u origin master
+  294  apt install jre
+  295  apt install default-jre
+  296  apt install wget
+  297  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+  298  sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+    /etc/apt/sources.list.d/jenkins.list'
+  299  sudo apt-get update
+  300  sudo apt-get install jenkins
+  301  docker ps
+  302  docker rm fd5 --force
+  303  docker images
+  304  docker pull avteetchayal/springapp:v1
+  305  docker images
+  306  docker image inspect avteetchayal/springapp:v1
+  307  docker pull avteetchayal/springapp:v1
+  308  history
+root@ip-172-31-17-174:~/springapp#
+
