@@ -11,3 +11,10 @@ this comes from docker file
 root@ip-172-31-17-174:~/project# cat dockerfile
 FROM nginx
 COPY index.html /usr/share/nginx/html
+
+
+convert it into an custom image
+165  docker build -t mywebimage .
+  166  docker images
+  167  docker run -p 80:80 -d mywebimage
+  168  docker ps
