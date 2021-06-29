@@ -1,0 +1,13 @@
+155  mkdir project
+  156  cd project/
+  157  vi index.html
+  158  vi dockerfile
+  159  ls
+  
+root@ip-172-31-17-174:~/project# cat index.html
+this comes from docker file
+
+
+root@ip-172-31-17-174:~/project# cat dockerfile
+FROM nginx
+COPY index.html /usr/share/nginx/html
