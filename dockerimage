@@ -18,3 +18,33 @@ convert it into an custom image
   166  docker images
   167  docker run -p 80:80 -d mywebimage
   168  docker ps
+  
+  How to dockerize an spring app
+   209  git clone https://github.com/gopal1409/springapp.git
+  210  ls
+  211  cd springapp/
+  212  ls
+  213  history
+  214  ls
+  215  cat Dockerfile
+  216  ls
+  217  mvn clean package
+  218  apt install maven
+  219  mvn clean package
+  220  java -jar target/spring-boot-web.jar
+  221  cat Dockerfile
+  222  clear
+  223  cat Dockerfile
+  224  docker image
+  225  docker images
+  226  clear
+  227  cat Dockerfile
+  228  clear
+  229  docker build -t springapp .
+  230  docker images
+  231  docker run -p 8080:8080 -d springapp
+  232  docker ps
+  233  history
+  234  docker images
+  235  docker image history springapp
+
