@@ -48,3 +48,12 @@ convert it into an custom image
   234  docker images
   235  docker image history springapp
 
+How to update the docker image 
+244  vi src/main/resources/templates/index.html
+  245  mvn clean package
+  246  docker build -t springapp .
+  247  docker images
+  248  docker ps
+  249  docker rm ff62 --force
+  250  docker run -p 8080:8080 -d springapp
+  251  history
