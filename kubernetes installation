@@ -21,3 +21,11 @@ EOF
    10  systemctl restart containerd
    11  systemctl status containerd
    12  history
+Install kubernetes
+17  sudo apt-get update
+   18  sudo apt-get install -y apt-transport-https ca-certificates curl
+   19  sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+   20  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+   21  sudo apt-get update
+   22  sudo apt-get install -y kubelet kubeadm kubectl
+   23  sudo apt-mark hold kubelet kubeadm kubectl
