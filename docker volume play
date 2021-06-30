@@ -15,3 +15,11 @@
   371  docker container run -d --name mysql -e MYSQL_ALLOW_EMPTY_PASSWORD=True -v mysql-db:/var/lib/mysql mysql:8
   372  docker ps
   373  docker container inspect 045a
+  
+  How to change the default path
+  377  cd /lib/systemd/system
+  378  ls
+  379  ls docker.service
+  380  vi docker.service
+
+  ExecStart=/usr/bin/dockerd --data-root /newfolder -H fd:// --containerd=/run/containerd/containerd.sock
