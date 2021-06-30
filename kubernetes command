@@ -1,3 +1,8 @@
 406  kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
   407  kubectl get pod --all-namespaces
   408  kubectl get nodes
+How to create your first pod 
+413  kubectl run my-first-pod --image stacksimplify/kubenginx:1.0.0
+  414  kubectl get pod
+  415  kubectl describe pod my-first-pod
+  416  kubectl get nodes
