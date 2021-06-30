@@ -6,3 +6,10 @@ How to create your first pod
   414  kubectl get pod
   415  kubectl describe pod my-first-pod
   416  kubectl get nodes
+  
+  How to expose your application outside k8s cluster
+   422  kubectl get svc
+  423  kubectl get service
+425  kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
+  426  kubectl get svc
+
