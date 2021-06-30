@@ -13,3 +13,12 @@ How to create your first pod
 425  kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
   426  kubectl get svc
 
+How to create a namespace
+431  kubectl get ns
+  432  kubectl create ns dev
+  433  kubectl get ns
+  434  kubectl run my-first-pod1 --image stacksimplify/kubenginx:1.0.0 --namespace=dev
+  435  kubectl get ns
+  436  kubectl get pod
+  437  kubectl get pod --namespace=dev
+
