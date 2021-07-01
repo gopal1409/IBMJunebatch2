@@ -36,4 +36,9 @@
   509  kubectl get svc
   510  history
   511  kubectl edit deploy nginx-deployment
+  
+  check the log of the pod
+   517  kubectl get pod
+  518  kubectl logs nginx-deployment-747757dc89-45nsd
+  519  kubectl logs -f nginx-deployment-747757dc89-45nsd
 
