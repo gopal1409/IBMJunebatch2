@@ -31,3 +31,9 @@ secret in kubernetes
   583  kubectl get secret
   584  kubectl describe secret my-db-password
   585  kubectl describe secret mysql-db-password
+deploying mysql
+588  git pull
+  589  kubectl apply -f mysql.yml
+  590  kubectl get pod
+  591  kubectl get deploy
+  592  kubectl describe deploy mysql
