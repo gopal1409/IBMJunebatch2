@@ -25,3 +25,9 @@
   573  kubectl apply -f mysqlconfig.yml
   574  kubectl get configmap
   575  kubectl describe configmap usermanagement-db-creation-script
+secret in kubernetes
+ 581  git pull
+  582  kubectl apply -f secret.yml
+  583  kubectl get secret
+  584  kubectl describe secret my-db-password
+  585  kubectl describe secret mysql-db-password
