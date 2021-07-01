@@ -37,3 +37,36 @@ deploying mysql
   590  kubectl get pod
   591  kubectl get deploy
   592  kubectl describe deploy mysql
+  
+  databse connectivity check
+   619  kubectl exec -it mysql-7fd7ffdd6b-7l7bb --df -h
+  620  kubectl exec -it mysql-7fd7ffdd6b-7l7bb -- df -h
+  621  clear
+  622  kubectl get deploy
+  623  kubectl get pod
+  624  git pull
+  625  kubectl apply -f mysqlsvc.yml
+  626  kubectl get svc
+  627  history
+  628  kubectl get svc
+  629  git pull
+  630  kubectl apply -f frontend.yml
+  631  kubectl get deploy
+  632  kubectl get pod
+  633  kubectl logs usermgmt-webapp-84557cc5d5-nlg68
+  634  history
+  635  kubectl get svc
+  636  kubectl get deploy
+  637  kubectl expose usermgmt-webapp --type=NodePort --port=80
+  638  kubectl expose deploy usermgmt-webapp --type=NodePort --port=80
+  639  kubectl get svc
+  640  kubectl delete svc usermgmt-webapp
+  641  git pull
+  642  kubectl apply -f frontendservice.yml
+  643  kubectl get svc
+  644  history
+  645  ls
+  646  clear
+  647  kubectl get pod
+  648  kubectl exec -it mysql-7fd7ffdd6b-7l7bb -- /bin/bash
+
