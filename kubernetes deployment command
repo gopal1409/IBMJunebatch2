@@ -25,3 +25,15 @@
   499  kubectl describe svc nginx-deployment
   500  kubectl edit svc nginx-deployment
   501  kubectl get svc
+  
+  edit the deployment
+  503  kubectl set image deployment nginx-deployment nginx=piuma/phpsysinfo --record
+  504  kubectl get rs
+  505  kubectl describe rs nginx-deployment-747757dc89
+  506  kubectl describe deploy
+  507  history
+  508  kubectl get pod -o wide
+  509  kubectl get svc
+  510  history
+  511  kubectl edit deploy nginx-deployment
+
