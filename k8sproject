@@ -1,0 +1,27 @@
+ 549  git pull
+  550  ls
+  551  kubectl apply -f pv.yml
+  552  kubectl get pv
+  553  history
+  554  kubectl get pv
+  555  clear
+  556  kubectl get pv
+  557  git pull
+  558  kubectl apply -f pvc.yml
+  559  kubectl get pvc
+  560  kubectl get pv
+  561  history
+  562  kubectl get pv
+  563  git pull
+  564  kubectl apply -f pvc.yml
+  565  kubectl get pv
+  566  kubectl get pvc
+  567  kubectl describe pv task-pv-claim1
+  568  kubectl describe pvc task-pv-claim1
+  569  clear
+  570  git pull
+  571  history
+  572  git pull
+  573  kubectl apply -f mysqlconfig.yml
+  574  kubectl get configmap
+  575  kubectl describe configmap usermanagement-db-creation-script
