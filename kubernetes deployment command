@@ -48,5 +48,8 @@
   524  kubectl rollout history deployment nginx-deployment
   525  kubectl rollout undo deployment nginx-deployment --to-revision=2
   526  kubectl rollout undo deployment nginx-deployment --to-revision=3
+autoscaling
+ 529  kubectl autoscale deploy nginx-deployment --min=4 --max=8 --cpu-percent=80
+  530  kubectl get hpa
 
 
