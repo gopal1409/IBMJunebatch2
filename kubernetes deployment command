@@ -41,4 +41,12 @@
    517  kubectl get pod
   518  kubectl logs nginx-deployment-747757dc89-45nsd
   519  kubectl logs -f nginx-deployment-747757dc89-45nsd
+  
+  rolling back
+  522  kubectl set image deployment nginx-deployment nginx=nginx --record
+  523  kubectl get rs
+  524  kubectl rollout history deployment nginx-deployment
+  525  kubectl rollout undo deployment nginx-deployment --to-revision=2
+  526  kubectl rollout undo deployment nginx-deployment --to-revision=3
+
 
