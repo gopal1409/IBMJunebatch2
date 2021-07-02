@@ -30,6 +30,12 @@ adding service
 713  vi Chart.yaml
   714  kubectl expose deploy mg-nginx --port 80 --dry-run -o yaml > ./templates/service.yaml
   715  tree
+  
+  Helm RollBack
+   722  helm rollback my-nginx 1
+  723  helm rollback my-nginx 2
+  724  helm rollback my-nginx 3
+
 
 
 
