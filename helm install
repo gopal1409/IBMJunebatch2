@@ -4,3 +4,10 @@
   656  mv linux-amd64/helm /usr/bin
   
   658  helm
+  
+  create a file
+   664  mkdir charts
+  665  cd charts/
+  666  history
+  667  touch Chart.yaml
+
