@@ -11,4 +11,17 @@ kubectl get svc --all-namespaces
   688  kubectl apply -f ingressservice.yml
   689  kubectl get deploy
   690  kubectl get svc
+703  kubectl apply -f ingressdeploymnet2.yml
+  704  kubectl apply -f ingressservice2.yml
+  705  kubectl get svc --all-namespaces
+  706  kubectl get svc
+  707  vi ingress-basic.yml
+  708  kubectl apply -f ingress-basic.yml
+  709  git pull
+  710  git checkout ingress-basic.yml
+  711  git pull
+  712  kubectl apply -f ingress-basic.yml
+  713  kubectl get svc
+  714  history
+root@ip-172-31-17-174:~/ibmjunebatch2yaml#
 
