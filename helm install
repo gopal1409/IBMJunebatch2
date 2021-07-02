@@ -17,4 +17,10 @@ version: 0.1.0
 appVersion: 1.0
 description: my custom nginx chart
 
+create our deployment file inside helm chart
+700  kubectl create deploy my-nginx --image nginx --dry-run -o yaml > ./templates/deployment.yaml
+  701  tree
+  702  cat templates/deployment.yaml
+
+
 
