@@ -8,4 +8,9 @@
   666  kubectl get svc --all-namespaces
   667  kubectl edit svc  monitoring-kube-prometheus-prometheus
   668  kubectl get svc  monitoring-kube-prometheus-prometheus
-  669  history
+  
+  grafana dashboard
+  656  kubectl get svc --all-namespaces
+  657  kubectl edit svc monitoring-grafana
+
+  661  kubectl get secret --namespace default monitoring-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
