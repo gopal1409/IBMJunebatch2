@@ -21,6 +21,11 @@ create our deployment file inside helm chart
 700  kubectl create deploy my-nginx --image nginx --dry-run -o yaml > ./templates/deployment.yaml
   701  tree
   702  cat templates/deployment.yaml
+  
+  Helm chart installation and uninstallation
+  705  helm install my-nginx .
+  706  helm list
+  707  helm uninstall my-nginx 
 
 
 
