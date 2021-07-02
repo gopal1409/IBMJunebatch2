@@ -26,6 +26,10 @@ create our deployment file inside helm chart
   705  helm install my-nginx .
   706  helm list
   707  helm uninstall my-nginx 
+adding service 
+713  vi Chart.yaml
+  714  kubectl expose deploy mg-nginx --port 80 --dry-run -o yaml > ./templates/service.yaml
+  715  tree
 
 
 
