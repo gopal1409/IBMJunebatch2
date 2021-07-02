@@ -1,0 +1,6 @@
+  653  wget https://get.helm.sh/helm-v3.6.2-linux-amd64.tar.gz
+
+  655  tar -zxvf helm-v3.6.2-linux-amd64.tar.gz
+  656  mv linux-amd64/helm /usr/bin
+  
+  658  helm
