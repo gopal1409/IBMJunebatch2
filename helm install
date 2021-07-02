@@ -33,6 +33,21 @@ adding service
   
   Helm RollBack
    722  helm rollback my-nginx 1
+   
+   value.yaml
+   root@ip-172-31-17-174:~/charts# vi values.yaml
+root@ip-172-31-17-174:~/charts# cat values.yaml
+replicaCount: 1
+root@ip-172-31-17-174:~/charts# tree
+.
+├── Chart.yaml
+├── templates
+│   ├── deployment.yaml
+│   └── service.yaml
+└── values.yaml
+
+1 directory, 4 files
+
   723  helm rollback my-nginx 2
   724  helm rollback my-nginx 3
 
