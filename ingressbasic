@@ -3,3 +3,12 @@
 kubectl create namespace ingress-basic
 678  helm install ingress-nginx ingress-nginx/ingress-nginx --namespace ingress-basic --set controller.replicaCount=2 --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux --set defaultBackend.nodeSelector."beta\.kubernetes\.io/os"=linux --set controller.service.externalTrafficPolicy=Local --set controller.service.loadBalancerIP="put your ip address"
 kubectl get svc --all-namespaces
+
+ 684  cd ibmjunebatch2yaml/
+  685  git pull
+
+  687  kubectl apply -f ingressdeployment.yml
+  688  kubectl apply -f ingressservice.yml
+  689  kubectl get deploy
+  690  kubectl get svc
+
