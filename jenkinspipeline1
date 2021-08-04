@@ -6,5 +6,8 @@ node  {
     stage('Mvn compilation'){
         sh "mvn clean package"
     }
+    stage('build docker image'){
+        sh 'docker build -t gopal1409/myapp-1.0.0'
+    }
     
 }
