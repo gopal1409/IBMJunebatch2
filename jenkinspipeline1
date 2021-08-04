@@ -9,5 +9,11 @@ node  {
     stage('build docker image'){
         sh 'docker build -t gopal1409/myapp-1.0.0 .'
     }
+    stage('Push image to hub.docker.com'){
+        withCredentials([string(credentialsId: 'dockerpwd', variable: 'dockerHubPwd')]) {
+       sh 'docker login -u gopal1409 -p ${dockerHubPwd}'
+      }
+      sh 'docker push gopal1409/myapp-1.0.0'
+    }
     
 }
