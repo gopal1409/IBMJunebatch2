@@ -7,7 +7,7 @@ node  {
         sh "mvn clean package"
     }
     stage('build docker image'){
-        sh 'docker build -t gopal1409/myapp-1.0.0'
+        sh 'docker build -t gopal1409/myapp-1.0.0 .'
     }
     
 }
